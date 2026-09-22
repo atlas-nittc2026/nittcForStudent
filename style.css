@@ -1,0 +1,47 @@
+/* 共通スタイル */
+body {
+  margin: 0;
+}
+nav {
+  background-color: #64a5d0;
+}
+nav ul {
+  list-style: none; margin: 0; padding: 0;
+}
+nav li a {
+  display: block;
+  padding: 20px 0;
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+  font-size: 14px;
+}
+nav li a:hover, nav li a.current {
+  background-color: #3276a4;
+}
+
+/* PC向け (Flexboxで横並び) */
+@media (min-width: 601px) {
+  nav {
+    border-top: 1px solid #3276a4;
+  }
+  nav ul {
+    display: flex; /* 横並びにする指定 */
+    max-width: 1200px; /* 必要に応じて全体の幅を制限 */
+    margin: 0 auto;
+  }
+  nav li {
+    flex: 1; /* 親要素の幅に合わせて均等（25%ずつ）に分配 */
+    border-bottom: 1px solid #3276a4;
+  }
+}
+
+/* スマホ向け (縦並び) */
+@media (max-width: 600px) {
+  nav {
+    border-top: 8px solid #3276a4;
+  }
+  nav li {
+    border-bottom: 1px solid #3276a4;
+  }
+}
