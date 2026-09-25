@@ -3,6 +3,9 @@
   <head>
     <meta charset="UTF-8">
     <title>NITTC for Student</title>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap');
+    </style>
   </head>
   <body>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,5 +18,36 @@
         <li><a href="timetable.html">時間割</a></li>
       </ul>
     </nav>
+    <h1>学科</h1>
+    <div class="syllabussearch">
+      <form action="#" method="POST">
+        <select name="department" id="department">
+          <option value="" selected disabled>学科を選択してください</option>
+          <option value="11">機械工学科</option>
+          <option value="12">電気工学科</option>
+          <option value="13">電子工学科</option>
+          <option value="14">情報工学科</option>
+          <option value="15">物質工学科</option>
+          <option value="25">【専攻科】一般科目</option>
+          <option value="26">【専攻科】専門共通科目</option>
+          <option value="27">【専攻科】機械情報システム工学専攻</option>
+          <option value="28">【専攻科】電気電子工学専攻</option>
+          <option value="29">【専攻科】物質工学専攻</option>
+        </select>
+        <select name="grade" id="grade">
+          <option value="" selected disabled>学年を選択してください</option>
+          <option value="01">第１学年</option>
+          <option value="02">第２学年</option>
+          <option value="03">第３学年</option>
+          <option value="04">第４学年</option>
+          <option value="05">第５学年</option>
+          <option value="a1">【専攻科】第１学年</option>  
+          <option value="a2">【専攻科】第２学年</option>
+        </select>
+        <input type="submit" value="検索" id="search-button">
+      </form>
+    </div>
+    <div class="array"></div>
+    
   </body>
 </html>
